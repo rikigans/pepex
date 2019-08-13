@@ -8,12 +8,6 @@ import binascii
 from time import time as timer	
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
-requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
-
-requests_sent = 0
-char_requests = 0
-
-
  /$$$$$$$$        /$$                     /$$ /$$           /$$$$$$$$          
 |__  $$__/       | $$                    |__/| $$          | $$_____/          
    | $$  /$$$$$$ | $$  /$$$$$$   /$$$$$$  /$$| $$   /$$    | $$       /$$   /$$
@@ -22,12 +16,13 @@ char_requests = 0
    | $$| $$_____/| $$| $$_____/| $$      | $$| $$_  $$     | $$        >$$  $$ 
    | $$|  $$$$$$$| $$|  $$$$$$$| $$      | $$| $$ \  $$ /$$| $$$$$$$$ /$$/\  $$
    |__/ \_______/|__/ \_______/|__/      |__/|__/  \__/|__/|________/|__/  \___AutoXploit
-                                                                               
-                                                                               
-                                                                               
 
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-
+requests_sent = 0
+char_requests = 0
+                                                                               
+                                                                                                                                                              
 def get_result(plaintext, key, session, pad_chars):
     global requests_sent, char_requests
 
